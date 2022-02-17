@@ -23,9 +23,39 @@ public class AnimalChooser {
         JButton button1 = new JButton("Red Panda");
         frame.add(button1, BorderLayout.SOUTH);
 
+        JButton button2 = new JButton("Baby Seal");
+        frame.add(button2, BorderLayout.NORTH);
+
+        JButton button3 = new JButton("Pippen");
+        frame.add(button3, BorderLayout.WEST);
+
+        JButton button4 = new JButton("Penguin");
+        frame.add(button4, BorderLayout.EAST);
+
         button1.addActionListener(new ActionListener() {
             public void actionPerformed(ActionEvent ae) {
                 ImageIcon icon = new ImageIcon("images/red_panda.jpg");
+                label1.setIcon(icon);
+            }
+        });
+
+        button2.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                ImageIcon icon = new ImageIcon("images/seal.jpg");
+                label1.setIcon(icon);
+            }
+        });
+
+        button3.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                ImageIcon icon = new ImageIcon("images/Pippen.png");
+                label1.setIcon(icon);
+            }
+        });
+
+        button4.addActionListener(new ActionListener() {
+            public void actionPerformed(ActionEvent ae) {
+                ImageIcon icon = new ImageIcon("images/img.png");
                 label1.setIcon(icon);
             }
         });
